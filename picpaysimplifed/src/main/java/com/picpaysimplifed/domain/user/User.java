@@ -1,4 +1,4 @@
-package domain.user;
+package com.picpaysimplifed.domain.user;
 
 import java.math.BigDecimal;
 

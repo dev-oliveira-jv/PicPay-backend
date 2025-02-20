@@ -1,9 +1,10 @@
-package domain.transaction;
+package com.picpaysimplifed.domain.transaction;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-import domain.user.User;
+import com.picpaysimplifed.domain.user.User;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;

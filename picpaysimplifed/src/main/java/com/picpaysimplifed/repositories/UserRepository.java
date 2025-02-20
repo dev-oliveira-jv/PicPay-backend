@@ -1,10 +1,12 @@
-package repositories;
+package com.picpaysimplifed.repositories;
 
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import domain.user.User;
+import com.picpaysimplifed.domain.user.User;
+
+
 
 public interface UserRepository extends JpaRepository<User, Long> {
 
