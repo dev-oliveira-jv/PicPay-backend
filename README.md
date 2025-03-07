@@ -66,5 +66,5 @@ Caso ache interessante, faça uma proposta de endpoint e apresente para os entre
 
 ## Autor
 
-- [@LuizAGDomingues](https://github.com/LuizAGDomingues)
+- [@João Victor](https://github.com/dev-oliveira-jv)
 
