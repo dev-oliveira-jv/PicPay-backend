@@ -63,6 +63,28 @@ Caso ache interessante, faça uma proposta de endpoint e apresente para os entre
   POST /users
 ```
 
+## Como executar:
+
+- Clone o repositório do projeto:
+
+```shell
+    gh repo clone dev-oliveira-jv/PicPay-backend
+```
+
+- Acesse a pasta do projeto e execute o comando para instalar as dependências:
+
+```shell
+mvn install
+```
+
+- Execute o comando para iniciar a aplicação:
+
+```shell
+mvn spring-boot:run
+```
+
+- A API estará disponível para receber requisições em <http://localhost:8080/>
+
 
 ## Autor
 
