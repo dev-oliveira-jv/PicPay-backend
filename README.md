@@ -1,7 +1,7 @@
 # PicPay-backend
 Objetivo: PicPay Simplificado O PicPay Simplificado é uma plataforma de pagamentos simplificada. Nela é possível depositar e realizar transferências de dinheiro entre usuários. Temos 2 tipos de usuários, os comuns e lojistas, ambos têm carteira com dinheiro e realizam transferências entre eles.
 
-# Requisitos
+## Requisitos
 A seguir estão algumas regras de negócio que são importantes para o funcionamento do PicPay Simplificado:
 
 Para ambos tipos de usuário, precisamos do Nome Completo, CPF, e-mail e Senha. CPF/CNPJ e e-mails devem ser únicos no sistema. Sendo assim, seu sistema deve permitir apenas um cadastro com o mesmo CPF ou endereço de e-mail;
@@ -27,4 +27,44 @@ Você pode implementar o que achar conveniente, porém vamos nos atentar somente
 
 Caso ache interessante, faça uma proposta de endpoint e apresente para os entrevistadores ❤️
 
-# Documentação da API:
+## Documentação da API
+
+#### Criar usuário
+
+```http
+  POST /users
+```
+
+| Parâmetro   | Tipo       | Descrição                           |
+| :---------- | :--------- | :---------------------------------- |
+| `firstName` | `string` | **Obrigatório**. Primeiro nome do usuário |
+| `lastName` | `string` | **Obrigatório**. Último nome do usuário |
+| `document` | `string` | **Obrigatório**. Documento do usuário |
+| `password` | `string` | **Obrigatório**. Senha do usuário |
+| `email` | `string` | **Obrigatório**. Email do usuário |
+| `userType` | `string` | **Obrigatório**. Tipo de do usuário (COMMON, MERCHANT) |
+| `balance` | `number` | **Obrigatório**. Saldo em conta do usuário |
+
+#### Criar transação
+
+```http
+  POST /transactions
+```
+
+| Parâmetro   | Tipo       | Descrição                           |
+| :---------- | :--------- | :---------------------------------- |
+| `senderId` | `string` | **Obrigatório**. ID do usuário que irá enviar o valor |
+| `receiverId` | `string` | **Obrigatório**. ID do usuário que irá receber o valor |
+| `value` | `number` | **Obrigatório**. Valor da transação |
+
+#### Listar usuários
+
+```http
+  POST /users
+```
+
+
+## Autor
+
+- [@LuizAGDomingues](https://github.com/LuizAGDomingues)
+
