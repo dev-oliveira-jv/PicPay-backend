@@ -25,12 +25,6 @@ Tente ser o mais aderente possível ao que foi pedido, mas não se preocupe se n
 Endpoint de transferência
 Você pode implementar o que achar conveniente, porém vamos nos atentar somente ao fluxo de transferência entre dois usuários. A implementação deve seguir o contrato abaixo.
 
-POST /transfer
-Content-Type: application/json
-
-{
-  "value": 100.0,
-  "payer": 4,
-  "payee": 15
-}
 Caso ache interessante, faça uma proposta de endpoint e apresente para os entrevistadores ❤️
+
+Documentação da API:
